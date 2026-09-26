@@ -1,0 +1,28 @@
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>Testimonials</h2>
+      <p>What clients and colleagues say</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div *ngFor="let testimonial of testimonials" class="testimonial-card">
+        <div class="rating">
+          <svg *ngFor="let i of [1,2,3,4,5]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none" [class.active]="i <= testimonial.rating">
+            <path d="M12 2l3.09 6.26L22 9.27l-7 6.87 1.18 7.02L12 17.77l-6.18 3.39L7 14.14 0 9.27l6.91-1.01L12 2z"></path>
+          </svg>
+        </div>
+
+        <p class="testimonial-text">{{ testimonial.text }}</p>
+
+        <div class="testimonial-author">
+          <div class="author-avatar"></div>
+          <div class="author-info">
+            <h4>{{ testimonial.name }}</h4>
+            <span class="position">{{ testimonial.position }} at {{ testimonial.company }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

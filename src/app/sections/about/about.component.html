@@ -1,0 +1,39 @@
+<section class="about">
+  <div class="container">
+    <div class="section-header">
+      <h2>About Me</h2>
+      <p>Experienced architect designing enterprise solutions</p>
+    </div>
+
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          I'm a Senior .NET Software Architect with over 12 years of experience designing and 
+          implementing scalable enterprise solutions. My expertise spans across full-stack 
+          development, cloud architecture, microservices, and system design.
+        </p>
+
+        <p>
+          I've worked with leading enterprises to architect and implement complex systems 
+          serving millions of users. My passion lies in creating elegant solutions to intricate 
+          problems, mentoring teams, and driving technical excellence.
+        </p>
+
+        <p>
+          I specialize in:
+        </p>
+
+        <ul class="expertise-list">
+          <li *ngFor="let item of expertise">{{ item }}</li>
+        </ul>
+      </div>
+
+      <div class="about-highlights">
+        <div *ngFor="let highlight of highlights" class="highlight-card">
+          <div class="highlight-value">{{ highlight.value }}</div>
+          <div class="highlight-label">{{ highlight.label }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

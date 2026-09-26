@@ -1,0 +1,81 @@
+<section class="hero">
+  <div class="hero-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    <div class="floating-element element-1"></div>
+    <div class="floating-element element-2"></div>
+    <div class="floating-element element-3"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">Available for new opportunities</span>
+      </div>
+
+      <h1 class="hero-title">
+        Senior <span class="text-gradient">.NET</span><br>
+        Software <span class="text-gradient">Architect</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Designing Scalable Enterprise Solutions with .NET, Azure & Cloud Architecture
+      </p>
+
+      <p class="hero-description">
+        With {{ experience }}+ years of experience, I specialize in building robust, 
+        scalable enterprise solutions using modern .NET technologies, microservices architecture, 
+        and cloud platforms. Let's create something extraordinary.
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">{{ experience }}+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">50+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">20+</span>
+          <span class="stat-label">Enterprise Clients</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">100K+</span>
+          <span class="stat-label">Users Served</span>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <button class="cta-button primary" (click)="downloadResume()">
+          <span>Download Resume</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </button>
+        <button class="cta-button secondary" (click)="scrollToProjects()">
+          View Projects
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/images/baldev.png" alt="Baldev Makwana - Senior .NET Software Architect" class="profile-image">
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll to explore</span>
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+  </div>
+</section>

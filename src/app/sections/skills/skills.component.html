@@ -1,0 +1,31 @@
+<section class="skills">
+  <div class="container">
+    <div class="section-header">
+      <h2>Technical Skills</h2>
+      <p>Expert-level proficiency across key technologies</p>
+    </div>
+
+    <div class="skills-container">
+      <div class="skills-categories">
+        <button *ngFor="let category of skillCategories; let i = index"
+                class="category-tab"
+                [class.active]="selectedCategory === i"
+                (click)="selectCategory(i)">
+          {{ category.name }}
+        </button>
+      </div>
+
+      <div class="skills-grid">
+        <div *ngFor="let skill of skillCategories[selectedCategory].skills" class="skill-card">
+          <div class="skill-header">
+            <h4>{{ skill.name }}</h4>
+            <span class="skill-level">{{ skill.level }}%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" [style.width.%]="skill.level"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

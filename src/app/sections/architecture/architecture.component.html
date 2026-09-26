@@ -1,0 +1,23 @@
+<section class="architecture">
+  <div class="container">
+    <div class="section-header">
+      <h2>Architecture Expertise</h2>
+      <p>Design patterns for scalable enterprise solutions</p>
+    </div>
+
+    <div class="architecture-grid">
+      <div *ngFor="let arch of architectures" class="architecture-card">
+        <div class="card-content">
+          <h3>{{ arch.title }}</h3>
+          <p>{{ arch.description }}</p>
+          
+          <div class="benefits">
+            <span *ngFor="let benefit of arch.benefits" class="benefit-badge">
+              {{ benefit }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

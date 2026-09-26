@@ -1,0 +1,39 @@
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Baldev Makwana</h3>
+        <p>Senior .NET Software Architect</p>
+        <p class="subtitle">Designing Scalable Enterprise Solutions</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li *ngFor="let link of quickLinks">
+            <a [href]="link.href">{{ link.name }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Follow</h4>
+        <div class="social-links">
+          <a *ngFor="let social of socialLinks" 
+             [href]="social.url" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="social-link"
+             [title]="social.name"
+             aria-label="Visit my {{ social.name }}">
+            <i [class]="social.icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ currentYear }} Designed & Architected by Baldev Makwana. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
