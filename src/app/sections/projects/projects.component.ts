@@ -15,42 +15,42 @@ export class ProjectsSectionComponent {
       description: 'Full-stack enterprise resource planning system serving 50+ companies',
       technologies: ['.NET 8', 'Angular', 'Azure', 'SQL Server'],
       featured: true,
-      image: '/assets/projects/erp.jpg'
+      image: '/assets/images/Projects/ERP.png'
     },
     {
       title: 'Multi-Tenant SaaS Application',
       description: 'Cloud-native SaaS platform with advanced tenant isolation and security',
       technologies: ['ASP.NET Core', 'React', 'Kubernetes', 'PostgreSQL'],
       featured: true,
-      image: '/assets/projects/saas.jpg'
+      image: '/assets/images/Projects/E-Commerce.png'
     },
     {
       title: 'IoT Monitoring System',
       description: 'Real-time IoT device monitoring and analytics platform',
       technologies: ['.NET', 'SignalR', 'MongoDB', 'Azure IoT Hub'],
       featured: false,
-      image: '/assets/projects/iot.jpg'
+      image: '/assets/images/Projects/IOT.png'
     },
     {
       title: 'E-Commerce Microservices',
       description: 'Event-driven microservices architecture for high-volume e-commerce',
       technologies: ['.NET', 'Kafka', 'Docker', 'Kubernetes'],
       featured: true,
-      image: '/assets/projects/ecommerce.jpg'
+      image: '/assets/images/Projects/E-Commerce.png'
     },
     {
       title: 'HRMS Platform',
       description: 'Comprehensive HR management system with workflow automation',
       technologies: ['ASP.NET Core', 'Angular', 'Azure', 'SQL Server'],
       featured: false,
-      image: '/assets/projects/hrms.jpg'
+      image: '/assets/images/Projects/HRMS.png'
     },
     {
       title: 'Manufacturing ERP',
       description: 'Industry-specific ERP solution for manufacturing operations',
       technologies: ['.NET 8', 'WPF', 'SQL Server', 'Azure'],
       featured: false,
-      image: '/assets/projects/manufacturing.jpg'
+      image: '/assets/images/Projects/ERP.png'
     }
   ];
 
