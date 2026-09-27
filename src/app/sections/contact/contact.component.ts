@@ -12,7 +12,6 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
 export class ContactSectionComponent {
   contactForm: FormGroup;
   submitted = false;
-  submitting = false;
   successMessage = '';
 
   socialLinks = [
@@ -42,17 +41,19 @@ export class ContactSectionComponent {
       return;
     }
 
-    this.submitting = true;
-    // Simulate form submission
-    setTimeout(() => {
-      this.submitting = false;
-      this.successMessage = 'Thank you! Your message has been sent successfully.';
-      this.contactForm.reset();
-      this.submitted = false;
-      
-      setTimeout(() => {
-        this.successMessage = '';
-      }, 5000);
-    }, 1500);
+    const { name, email, subject, message } = this.contactForm.getRawValue();
+    const whatsappMessage = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Subject: ${subject}`,
+      '',
+      message
+    ].join('\n');
+    const whatsappUrl = `https://wa.me/918460315245?text=${encodeURIComponent(whatsappMessage)}`;
+
+    if (typeof window !== 'undefined') {
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      this.successMessage = 'WhatsApp opened with your message. Review it there and press Send.';
+    }
   }
 }
