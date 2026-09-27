@@ -89,6 +89,12 @@
     transition: transform 0.3s ease;
   }
 
+  .social-icon {
+    width: 1.2em;
+    height: 1.2em;
+    object-fit: contain;
+  }
+
   &:hover {
     background: linear-gradient(135deg, var(--primary), var(--accent));
     border-color: transparent;

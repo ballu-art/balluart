@@ -16,10 +16,10 @@ export class ContactSectionComponent {
   successMessage = '';
 
   socialLinks = [
-    { name: 'Email', value: 'baldev@example.com', icon: 'email' },
-    { name: 'Phone', value: '+1 (555) 123-4567', icon: 'phone' },
-    { name: 'LinkedIn', value: 'linkedin.com/in/baldev', icon: 'linkedin' },
-    { name: 'GitHub', value: 'github.com/baldev', icon: 'github' }
+    { name: 'Email', value: 'info.balluart@gmail.com', icon: 'email' },
+    { name: 'Phone', value: '+91 84603 15245', icon: 'phone' },
+    { name: 'LinkedIn', value: 'linkedin.com/in/ballu-art-0a5b22389', icon: 'linkedin' },
+    // { name: 'GitHub', value: 'github.com/baldev', icon: 'github' }
   ];
 
   constructor(private fb: FormBuilder) {
